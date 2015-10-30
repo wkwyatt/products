@@ -13,7 +13,8 @@ $(document).ready(function() {
 		return [currW, currH];
 	}
 
-	$('.home-image-wrapper img').height(scaleSize($(this).width(), 200, $(this).width(), $(this).height())[0]);
-	$('.home-image-wrapper img').width(scaleSize($(this).width(), 200, $(this).width(), $(this).height())[1]);
+	var maxWidth = $('.home-image-wrapper').width()
+	// $('.home-image-wrapper img').height(maxWidth, 200, $(this).width(), $(this).height())[0]);
+	$('.home-image-wrapper img').width(maxWidth, 200, $(this).width(), $(this).height())[1]);
 });
 	
